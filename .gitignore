@@ -1,4 +1,5 @@
 __pycache__*
+CLARIRY.spec*
 build/
 releases/
-build_app.ps1
+build_app.ps1*
