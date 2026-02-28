@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Clariry_App/Public/assets/CLARIRY_Brand.png" width="200" alt="CLARIRY Brand" />
+  <img src="Clariry_App/public/assets/CLARIRY_Brand.png" width="200" alt="CLARIRY Brand" />
 </p>
 
 <p align="center">
