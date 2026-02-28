@@ -190,11 +190,29 @@ Local AI Layer
 
 ---
 
+## 🌐 Web Landing Page
+
+CLARIRY now includes a premium, ultra-creative **HTML/CSS/JS Landing Page** (located in `web-html/`) inspired by modern cosmic designs.
+
+* **Glitch Preloader**: Fast, engaging entry sequence.
+* **Hero Parallax**: Interactive cosmic UI cards that respond to mouse movements.
+* **Glassmorphism**: Premium deep-space styling.
+* **No Build Required**: Just open `index.html` to experience it.
+
+---
+
 ## 📄 Project Status
 
 🚧 **In active development**
 
 This project is being developed as a **serious CSE system design project** with potential for real-world deployment.
+
+---
+
+## 🧑‍💻 Developer
+**Ishaan Ray** — Full Stack Engineer / AI ML Engineer
+* GitHub: [Cipher-Shadow-IR](https://github.com/Cipher-Shadow-IR)
+* LinkedIn: [ishaan-ray-cs](https://linkedin.com/in/ishaan-ray-cs)
 
 ---
 

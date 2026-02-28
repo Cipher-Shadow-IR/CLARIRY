@@ -1,0 +1,4 @@
+__pycache__*
+build/
+releases/
+build_app.ps1
