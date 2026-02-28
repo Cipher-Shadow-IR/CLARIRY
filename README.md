@@ -147,7 +147,7 @@ That design prevents hallucinated context and preserves deterministic learning f
 CLARIRY includes a premium HTML/CSS/JS landing page inside:
 
 ```
-web-html/
+Clariry-Website/
 ```
 
 Features:
