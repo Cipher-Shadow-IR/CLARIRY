@@ -1,223 +1,218 @@
-# CLARIRY
+<p align="center">
+  <img src="Clariry_App/Public/assets/CLARIRY_Brand.png" width="200" alt="CLARIRY Brand" />
+</p>
 
-**CLARIRY** is an **offline, audio-first learning system** designed to help students *understand* long study materials instead of memorizing them.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Cambria&size=30&duration=4000&color=7DF9FF&center=true&vCenter=true&width=1000&height=70&lines=CLARIRY+%7C+Understanding+One+Paragraph+At+A+Time" alt="Typing SVG" />
+</p>
 
-It explains **PDF-based study content paragraph-by-paragraph**, in simple conversational language, allows real-time interruption for doubts, and supports non-linear navigation — all while working **completely offline**.
-
-> **Tagline:** *Understanding, one paragraph at a time.*
-
----
-
-## 🚩 Problem Statement
-
-Students often struggle with long, text-heavy PDFs (30–200 pages). Reading-based study leads to:
-
-* Skipping important sections
-* Rote memorization
-* Poor conceptual clarity
-* Low exam performance despite effort
-
-Existing tools either summarize aggressively or behave like chatbots, which do not support **focused, exam-oriented understanding**.
+<h2 align="center">🎧 An Offline Audio-First Learning Engine for Deep Conceptual Mastery</h2>
 
 ---
 
-## 💡 Core Idea
-
-CLARIRY replaces text-heavy studying with a **disciplined audio-first approach**:
-
-* The student listens instead of reading
-* Content is explained **one paragraph at a time**
-* Explanations are short, simple, and example-driven
-* The student can interrupt anytime and resume seamlessly
-* The system supports jumping to *any* paragraph on demand
-
-The goal is to bridge the gap between **conceptual understanding** and **exam performance**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Core%20Engine-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/PySide-Desktop%20UI-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LLM-Offline%207B+-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TTS-Coqui%20%2F%20System-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/State-Local%20JSON-lightgrey?style=for-the-badge" />
+</p>
 
 ---
 
-## ✨ Key Features
+## 🚀 CLARIRY
+
+> *Clarity first. Marks as a consequence.*
+
+**CLARIRY** is an offline, system-controlled, paragraph-level AI learning engine designed for serious students who want conceptual understanding — not surface-level summaries.
+
+It transforms long, text-heavy PDFs into structured, interruptible, audio explanations.
+
+Not a chatbot.
+Not a summarizer.
+A disciplined learning system.
+
+Built by **Ishaan Ray (Cipher Shadow IR)** 🧠
+
+---
+
+## 🌌 The Problem
+
+Most students face:
+
+* 📚 100+ page PDFs
+* 😵 Text overload
+* 🧠 Memorization without understanding
+* ❌ Poor exam recall
+
+Chatbots distract.
+Summarizers oversimplify.
+Reading encourages skipping.
+
+Understanding suffers.
+
+---
+
+## 💡 The CLARIRY Solution
+
+CLARIRY enforces structured comprehension:
+
+* 🔊 Explains **one paragraph at a time**
+* 🧩 Each paragraph is an independent atomic unit
+* 🛑 Allows real-time interruption
+* 🔁 Supports non-linear jumps
+* 🧠 Converts understanding into exam-ready format
+
+It simulates disciplined teaching — not casual chatting.
+
+---
+
+## 🎯 What It Does
 
 ### 📄 PDF-Centric Learning
 
 * Upload digitally typed PDFs (100–200 pages supported)
-* PDF opens inside the app
-* Paragraphs are automatically indexed
-* Currently explained paragraph is highlighted
+* Automatic paragraph indexing
+* Active paragraph highlighting
+* Click-to-explain navigation
 
-### 🔊 Audio-First Explanation
+### 🎧 Audio-First Explanation
 
-* Each paragraph is explained verbally
-* Simple, conversational language (non-textbook tone)
-* Short explanations (focused, no overloading)
-* Example-based whenever possible
+* Conversational tone
+* Example-driven
+* Short & focused
+* No textbook verbosity
 
-### 🖱️ Random-Access Navigation
+### 🔁 Random Access
 
-* Click **any paragraph** to hear its explanation
-* Jump forward or backward freely
-* Re-explain previous content without penalties
+* Jump to any paragraph
+* Re-explain without penalty
+* Resume from exact break-point
 
-> Each paragraph is treated as an **independent explainer unit**.
+### 🧠 Exam Mode
 
-### ⏸️ Interrupt & Resume
+* Converts content into:
 
-* Pause explanation anytime
-* Ask a doubt mid-explanation
-* Receive a brief answer
-* Resume explanation from the correct point
-
-### 📝 Exam Mode (Optional)
-
-* Converts understood content into exam-ready format
-* Bullet points
-* Keywords
-* Formal exam tone
+  * Bullet points
+  * Keywords
+  * Formal tone
+  * Answer-ready structure
 
 ---
 
-## 🧠 Design Philosophy
-
-* **Understanding > Memorization**
-* **Audio > Text** (to prevent skipping)
-* **System-controlled flow**, not AI-controlled
-* **Stateless AI**, state handled by the application
-* **Offline-first**, privacy-safe
-
-CLARIRY is not a chatbot. It is a **learning system**.
-
----
-
-## 🏗️ High-Level Architecture
+## 🏗 System Architecture
 
 ```
 Desktop UI (Python)
 │
-├─ PDF Viewer & Highlighting
-├─ User Controls (Play / Pause / Jump)
+├── PDF Viewer + Highlighting
+├── Playback Controls
 │
 ▼
-Core Engine (Python)
+Core Engine
 │
-├─ PDF Parsing & Paragraph Indexing
-├─ State Management
-├─ Navigation Logic
+├── Paragraph Indexing
+├── Navigation State
+├── Interrupt Logic
 │
 ▼
-Local AI Layer
+Offline AI Layer
 │
-├─ Offline LLM (Explanation)
-├─ Offline TTS (Audio Output)
+├── Local LLM (Stateless)
+├── Offline TTS
 ```
 
-* The AI model has **no memory**
-* All learning state is maintained by the system
+🧠 The LLM has no memory.
+📦 All state is system-managed.
+
+That design prevents hallucinated context and preserves deterministic learning flow.
 
 ---
 
 ## 🧩 Tech Stack
 
-### Core Engine
-
-* **Python**
-
-### Desktop UI
-
-* **PySide / PyQt** (native desktop application)
-
-### PDF Processing
-
-* PyMuPDF / pdfplumber
-
-### AI (Offline)
-
-* Local open-source LLM (7B–8B class)
-* Executed via llama.cpp / Ollama
-
-### Text-to-Speech
-
-* Coqui TTS or system-level TTS
-
-### State Storage
-
-* Local JSON (initial)
-* SQLite (future)
+| Layer              | Technology             |
+| ------------------ | ---------------------- |
+| **Core Engine**    | Python                 |
+| **Desktop UI**     | PySide / PyQt          |
+| **PDF Processing** | PyMuPDF / pdfplumber   |
+| **LLM Execution**  | llama.cpp / Ollama     |
+| **TTS**            | Coqui TTS / System TTS |
+| **State Storage**  | JSON → SQLite (future) |
 
 ---
 
-## 🗺️ Development Roadmap
+## 🌐 Landing Page
 
-### Phase 1 — Core Engine
+CLARIRY includes a premium HTML/CSS/JS landing page inside:
 
-* PDF parsing
-* Paragraph indexing
-* State object
-* Local LLM explanation
-* Audio playback
+```
+web-html/
+```
 
-### Phase 2 — Desktop MVP
+Features:
 
-* PDF viewer
-* Paragraph highlighting
-* Click-to-explain
-* Play / pause controls
+* ⚡ Glitch Preloader
+* 🌌 Cosmic Parallax UI
+* 🪞 Glassmorphism
+* 🎨 No build tools required
 
-### Phase 3 — Interrupt & Resume
-
-* Doubt handling
-* Resume logic
-* Re-explain support
-
-### Phase 4 — Exam Mode
-
-* Exam-format conversion
-
-### Phase 5 — Stability & Polish
-
-* Performance optimization
-* Audio improvements
-* Keyboard shortcuts
+Open `index.html` to experience.
 
 ---
 
-## 📌 Why CLARIRY is Different
+## 🧠 How It Works
 
-* Works **entirely offline**
-* Audio-first by design
-* Paragraph-level atomic explanations
-* Non-linear learning supported
-* No chat distraction
-* Designed for exam-focused understanding
+1. Open PDF
+2. System indexes paragraphs
+3. User clicks paragraph
+4. LLM explains
+5. TTS speaks
+6. User can interrupt
+7. System resumes cleanly
 
----
-
-## 🌐 Web Landing Page
-
-CLARIRY now includes a premium, ultra-creative **HTML/CSS/JS Landing Page** (located in `web-html/`) inspired by modern cosmic designs.
-
-* **Glitch Preloader**: Fast, engaging entry sequence.
-* **Hero Parallax**: Interactive cosmic UI cards that respond to mouse movements.
-* **Glassmorphism**: Premium deep-space styling.
-* **No Build Required**: Just open `index.html` to experience it.
+Flow is deterministic.
+AI is stateless.
+System controls everything.
 
 ---
 
-## 📄 Project Status
+## 🔭 Roadmap
 
-🚧 **In active development**
-
-This project is being developed as a **serious CSE system design project** with potential for real-world deployment.
-
----
-
-## 🧑‍💻 Developer
-**Ishaan Ray** — Full Stack Engineer / AI ML Engineer
-* GitHub: [Cipher-Shadow-IR](https://github.com/Cipher-Shadow-IR)
-* LinkedIn: [ishaan-ray-cs](https://linkedin.com/in/ishaan-ray-cs)
+* 🎯 Doubt context tracking
+* 🧠 Improved resume logic
+* ⚡ Performance optimization
+* 🧩 SQLite state engine
+* 🎛 Keyboard-first navigation
+* 📊 Learning analytics (future vision)
 
 ---
 
-## 🧠 Final Note
+## ⚙️ Local Setup (Desktop)
 
-> *CLARIRY is built for students who want clarity first — and marks as a consequence.*
+```bash
+# Clone repository
+git clone https://github.com/Cipher-Shadow-IR/clariry.git
+
+# Enter directory
+cd clariry
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run app
+python main.py
+```
 
 ---
+
+## 💬 Author
+
+<p align="center">
+  <img src="https://img.icons8.com/fluency/48/brain.png" /><br><br>
+  <b>Built by Ishaan Ray (Cipher Shadow IR)</b><br>
+  <i>“Understanding, one paragraph at a time.”</i><br><br>
+  <a href="https://github.com/Cipher-Shadow-IR" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Cipher%20Shadow%20IR-181717?style=for-the-badge&logo=github" />
+  </a>
+</p>
